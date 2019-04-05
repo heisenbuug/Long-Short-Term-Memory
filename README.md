@@ -67,9 +67,12 @@ Zooming in a bit in the **architecture of LSTM cell**, it contains **four gates*
 4. Use Gate
 
 **Step 1:** **Long Term Memory** goes to the **Forget Gate** where it forgets all the info that it doesn't consider usefull.
+
 **Step 2:** **Short Term Memory** and **Event** are joined together in the **Learn Gate**.
+
 **Step 3:** Now the **Long Term Memory** that we haven't forgotten yet plus the new info that we learned at **Learn Gate** get joined at **Remember Gate**. This gate outputs the **Updated Long Term Memory.**
-**Step 4**: The **Use Gate** takes the same input as **Remember Gate** and gives us new **Short Term Memory** and our **Prediction/Output.**
+
+**Step 4**: The **Use Gate** takes the same input as **Remember Gate** and gives us new **Short Term Memory** and our    **Prediction/Output.**
 
 So to summarize we can say, we have **LTM & STM** coming in. An **Event** is also coming in. **Output, Updated LTM & STM** are coming out which are then passed to next **LSTM cell** and so on and so forth.  
 
