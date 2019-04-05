@@ -41,7 +41,7 @@ In **FFNN** we use an activation function to obtain hidden layer, for that all w
 The **LSTM** cells was propsed in 1997 by **Sepp Hocreiter and Jurgen Schmidhuber**. The goal was to overcome **Vanishing Gradient Problem**.
 It basically allows certain inputs to be latched or stored for long period of time without forgetting them as would be the case in RNNs. 
 
-### LSTM
+## LSTM
 The major concept behind LSTM was the idea that some signals(state variables) can be **kept fixed by using gates** and **reintroduced or not at an appropriate time in the future**. By doing so arbitrary time intervals can be represented and **temporal dependencies** can be captured. The main idea is that LSTMs can decide which info to **forget**, which to **store** and **when to use it**.
 
 In **RNN** memory comes in **merges with the current event** and output comes out **as the prediction what input is* and **also as the part of the input** for the next iteration of the neural network.
