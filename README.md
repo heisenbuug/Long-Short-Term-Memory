@@ -10,10 +10,10 @@ RNN's basically Artificial Neural Networks which can capture Temporal Dependenci
 
 #### History Of RNN
 Feed-Forward Networks were simlpy unable to capture Temporal dependencies. Modeling time based data is very critical in many real world situation since signals like speech have time varying properties. Biological neural networks themselves have recurrance so the idea of applying the same concept to ANN was born. 
-
+<p>
 The first attempt to do so was using Time Delay Neural Network(TDNN, 1989)
-Simple RNN's or Elman Networks(1990) 
-
+After that, Simple RNN's or Elman Networks(1990) 
+</p>
 After further work a phenomenon called THE VANISHING GRADIENT PROBLEM came into picture.
 
 Vanishing Gradient Problem refers to geometrical decay in the contribution of information over time. So caputring info that occured 6-10 steps backward was not possible. Despite the advantage of the memory all these network had this major flaw(extent of backward steps they can remember).
