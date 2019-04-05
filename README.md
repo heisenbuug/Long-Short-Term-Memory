@@ -8,7 +8,7 @@ Many of real life decision making involves **Temporal Dependencies** ie our curr
 Recurrent Neural Networks or RNN are basically similar to **Feed-Forward Networks with the addition of memory**. 
 RNN's basically Artificial Neural Networks which can capture Temporal Dependencies(Dependencies over time).
 
-#### History Of RNN
+### History Of RNN
 Feed-Forward Networks were simlpy unable to capture **Temporal dependencies**. Modeling time based data is very critical in many real world situation since signals like speech have time varying properties. Biological neural networks themselves have recurrance so the idea of applying the same concept to ANN was born. 
 
 The first attempt to do so was using **Time Delay Neural Network(TDNN, 1989)**
