@@ -55,7 +55,7 @@ We have four major compnents in an **LSTM** cell:
 * Output
 
 ### Working of LSTM Cell
-The **three peices(Event, Long * Short Term Memory)** of information goes inside the neuron and some math happens and we get new peices of information which are:
+The **three peices(Event, Long & Short Term Memory)** of information goes inside the neuron and some math happens and we get new peices of information which are:
 * Updated Long Term Memory
 * Updated Short Term Memory
 * Prediction
