@@ -44,7 +44,34 @@ It basically allows certain inputs to be latched or stored for long period of ti
 ### LSTM
 The major concept behind LSTM was the idea that some signals(state variables) can be **kept fixed by using gates** and **reintroduced or not at an appropriate time in the future**. By doing so arbitrary time intervals can be represented and **temporal dependencies** can be captured. The main idea is that LSTMs can decide which info to **forget**, which to **store** and **when to use it**.
 
+In **RNN** memory comes in **merges with the current event** and output comes out **as the prediction what input is* and **also as the part of the input** for the next iteration of the neural network.
 
+**LSTM** keeps track of **Long term memory** ehich comes in and comes out and also **Short term memory** which also comes in and comes out and in every stage the **long and short term memory get merged** and from there we get a new **Long term memory**, **Short term memory** and a **prediction**.
+
+We have four major compnents in an **LSTM** cell:
+* Long Term Memory
+* Short Term Memory
+* Event 
+* Output
+
+#### Working of LSTM Cell
+The **three peices(Event, Long * Short Term Memory)** of information goes inside the neuron and some math happens and we get new peices of information which are:
+* Updated Long Term Memory
+* Updated Short Term Memory
+* Prediction
+
+Zooming in a bit in the **architecture of LSTM cell**, it contains **four gates**:
+1. Forget Gate
+2. Remember Gate
+3. Learn Gate
+4. Use Gate
+
+**Step 1:** **Long Term Memory** goes to the **Forget Gate** where it forgets all the info that it doesn't consider usefull.
+**Step 2:** **Short Term Memory** and **Event** are joined together in the **Learn Gate**.
+**Step 3:** Now the **Long Term Memory** that we haven't forgotten yet plus the new info that we learned at **Learn Gate** get joined at **Remember Gate**. This gate outputs the **Updated Long Term Memory.**
+**Step 4**: The **Use Gate** takes the same input as **Remember Gate** and gives us new **Short Term Memory** and our **Prediction/Output.**
+
+So to summarize we can say, we have **LTM & STM** coming in. An **Event** is also coming in. **Output, Updated LTM & STM** are coming out which are then passed to next **LSTM cell** and so on and so forth.  
 
 ### Markdown
 
