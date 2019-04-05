@@ -3,9 +3,9 @@
 Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections that make it a "general purpose computer" (that is, it can compute anything that a Turing machine can). It cannot only process single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition or speech recognition.
 
 ### Recurrent Neural Networks
-Many of real life decision making involves Temporal Dependencies ie our current decision(in our case output) depends not only on current input but also past inputs. Lets consider a simple case where we want to decide menu for todays dinner, as I had pizza yesterday so I should prefer a salad(maybe) to maintain a helthy dite. Decisions like these require some kind of memory, one should remember what he/she ate yesterday and on the basis of that he/she can decide toadys menu.
+Many of real life decision making involves **Temporal Dependencies** ie our current decision(in our case output) depends not only on current input but also past inputs. Lets consider a simple case where we want to decide menu for todays dinner, as I had pizza yesterday so I should prefer a salad(maybe) to maintain a helthy dite. Decisions like these require some kind of memory, one should remember what he/she ate yesterday and on the basis of that he/she can decide toadys menu.
 
-Recurrent Neural Networks or RNN are basically similar to Feed-Forward Networks with the addition of memory. 
+Recurrent Neural Networks or RNN are basically similar to **Feed-Forward Networks with the addition of memory**. 
 RNN's basically Artificial Neural Networks which can capture Temporal Dependencies(Dependencies over time).
 
 #### History Of RNN
