@@ -38,7 +38,9 @@ The major concept behind LSTM was the idea that some signals(state variables) ca
   Current inputs as well as activations of neurons serve as input to the next time step.
   
 ### Comparision between FFNN and RNN
-In FFNN the output at anytime is a function of current inputs and weights alone. But in RNN our output at any time t is not only dependent on current input and weights but also on previous inputs(input at time t-1, t-2...t-n)
+In FFNN the output at anytime is a function of **current inputs and weights alone**. But in RNN our output at any time t is not only dependent on **current input and weights but also on previous inputs(input at time t-1, t-2...t-n)**.
+
+In **FFNN** we use an activation function to obtain hidden layer, for that all we need are **inputs** and the **weight matrix** connecting the inputs to the hidden layer. In **RNN** we use an activation function but here the input to the activation function is now the sum of the **product of inputs and their corresponding weight matrix** and **the product of the previous activation values and thier coresspondig weight martix**.
 
 ### Markdown
 
