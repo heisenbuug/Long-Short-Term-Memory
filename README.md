@@ -37,8 +37,13 @@ In FFNN the output at anytime is a function of **current inputs and weights alon
 
 In **FFNN** we use an activation function to obtain hidden layer, for that all we need are **inputs** and the **weight matrix** connecting the inputs to the hidden layer. In **RNN** we use an activation function but here the input to the activation function is now the sum of the **product of inputs and their corresponding weight matrix** and **the product of the previous activation values and thier coresspondig weight martix**.
 
+The **LSTM** cells was propsed in 1997 Sepp Hocreiter and JUrgen Schmidhuber. The goal was to overcome **Vanishing Gradient Problem**.
+It basically allows certain inputs to be latched or stored for long period of time without forgetting them as would be the case in RNNs. 
+
 ### LSTM
-The major concept behind LSTM was the idea that some signals(state variables) can be kept fixed by using gates and reintroduced or not at an appropriate time in the future. By doing so arbitrary time intervals can be represented and temporal dependencies can be captured.
+The major concept behind LSTM was the idea that some signals(state variables) can be **kept fixed by using gates** and **reintroduced or not at an appropriate time in the future**. By doing so arbitrary time intervals can be represented and **temporal dependencies** can be captured. The main idea is that LSTMs can decide which info to **forget**, which to **store** and **when to use it**.
+
+
 
 ### Markdown
 
