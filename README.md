@@ -20,10 +20,7 @@ After further work a phenomenon called THE **VANISHING GRADIENT PROBLEM** came i
 ### Vanishing Gradient Problem
 Vanishing Gradient Problem refers to geometrical decay in the contribution of information over time. So caputring info that occured 6-10 steps backward was not possible. Despite the advantage of the memory all these network had this major flaw(extent of backward steps they can remember).
 
-In 1990 **LSTM** was introduced to address this very problem of **Vanishing Gradient Decent**.
-
-### LSTM
-The major concept behind LSTM was the idea that some signals(state variables) can be kept fixed by using gates and reintroduced or not at an appropriate time in the future. By doing so arbitrary time intervals can be represented and temporal dependencies can be captured.
+**LSTM** was introduced to address this very problem of **Vanishing Gradient Decent**.
 
 ### Applications of RNN
 * Speech Recognition: Siri, Google Assistant, Alexa
@@ -41,6 +38,9 @@ The major concept behind LSTM was the idea that some signals(state variables) ca
 In FFNN the output at anytime is a function of **current inputs and weights alone**. But in RNN our output at any time t is not only dependent on **current input and weights but also on previous inputs(input at time t-1, t-2...t-n)**.
 
 In **FFNN** we use an activation function to obtain hidden layer, for that all we need are **inputs** and the **weight matrix** connecting the inputs to the hidden layer. In **RNN** we use an activation function but here the input to the activation function is now the sum of the **product of inputs and their corresponding weight matrix** and **the product of the previous activation values and thier coresspondig weight martix**.
+
+### LSTM
+The major concept behind LSTM was the idea that some signals(state variables) can be kept fixed by using gates and reintroduced or not at an appropriate time in the future. By doing so arbitrary time intervals can be represented and temporal dependencies can be captured.
 
 ### Markdown
 
