@@ -82,11 +82,20 @@ So to summarize we can say, we have **LTM & STM** coming in. An **Event** is als
 #### Learn Gate
 **STM** and **Event** are comnied through a **Linear Function** which consists of **joining the vectors**, **multipling a matrix** and **adding a bias** and finally putting all these in **tanh(activation function)**. 
 
-As we have discussed that we have to **ignore certain part**, to do so we multiple the above result with an **Ignore Factor(a vector)**. We use **previous info of STM & Event** to calculate Ignore Factor.
+As we have discussed that we have to **ignore certain part**, to do so we multiple the above result with an **Ignore Factor(a vector)**. 
 
-For **Ignore Factor** we create a small NN whose inputs are **STM** and **EVENT**, will pass them through a **Linear Function** and pass them through the **sigmoid function**.
+We use **previous info of STM & Event** to calculate Ignore Factor. For **Ignore Factor** we create a small NN whose inputs are **STM** and **EVENT**, will pass them through a **Linear Function** and pass that through the **sigmoid function**.
 
+#### Forget Gate
+Takes in **LTM** and decides what part to keep and what to forget. So **LTM** from time (t-1) comes in and gets multiplied by a **Forget Factor**.
 
+To calculate **Forget Factor** we use **STM** and **Event** and follow the same process as we did for **Ignore Factor**.
+
+#### Remember Gate
+We take output coming from **Forget Gate & Lerarn Gate** and we simply **add** them.
+
+#### Use Gate
+We apply **tanh activation function** at the output of **Forget Gate** and **Sigmoid activation function** at **combined STM & Event** and as a final step we **multiple** these two to get **output**, which also works as **new STM**.   
 
 ### Markdown
 
