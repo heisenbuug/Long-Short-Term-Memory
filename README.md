@@ -1,7 +1,6 @@
-## Welcome to GitHub Pages
+## Long-Short Term Memory
 
-I have added these lines
-You can use the [editor on GitHub](https://github.com/heisenbuug/Testing/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections that make it a "general purpose computer" (that is, it can compute anything that a Turing machine can). It cannot only process single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition or speech recognition.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
