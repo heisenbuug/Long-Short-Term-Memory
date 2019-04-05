@@ -54,7 +54,7 @@ We have four major compnents in an **LSTM** cell:
 * Event 
 * Output
 
-#### Working of LSTM Cell
+### Working of LSTM Cell
 The **three peices(Event, Long * Short Term Memory)** of information goes inside the neuron and some math happens and we get new peices of information which are:
 * Updated Long Term Memory
 * Updated Short Term Memory
@@ -75,6 +75,18 @@ Zooming in a bit in the **architecture of LSTM cell**, it contains **four gates*
 **Step 4**: The **Use Gate** takes the same input as **Remember Gate** and gives us new **Short Term Memory** and our    **Prediction/Output.**
 
 So to summarize we can say, we have **LTM & STM** coming in. An **Event** is also coming in. **Output, Updated LTM & STM** are coming out which are then passed to next **LSTM cell** and so on and so forth.  
+
+**LSTM cell** is more complex than a simple **RNN cell** as here we have to apply **Four Functions**, each for a **gate** that we discusse earilier.
+
+### Working Of Gates
+#### Learn Gate
+**STM** and **Event** are comnied through a **Linear Function** which consists of **joining the vectors**, **multipling a matrix** and **adding a bias** and finally putting all these in **tanh(activation function)**. 
+
+As we have discussed that we have to **ignore certain part**, to do so we multiple the above result with an **Ignore Factor(a vector)**. We use **previous info of STM & Event** to calculate Ignore Factor.
+
+For **Ignore Factor** we create a small NN whose inputs are **STM** and **EVENT**, will pass them through a **Linear Function** and pass them through the **sigmoid function**.
+
+
 
 ### Markdown
 
