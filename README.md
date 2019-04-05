@@ -29,10 +29,8 @@ Vanishing Gradient Problem refers to geometrical decay in the contribution of in
 * Gesture Recognition: Intel, Qualcomm
 
 ### Difference between RNN and FFNN
-1. Manner in which we define inputs and outputs
-<p>Instead of traing with a single input single output at each time step we use sequences since previous inputs matter.</p>
-2. Memory Elements that RNN's keep
-<p>Current inputs as well as activations of neurons serve as input to the next time step.</p>
+1. **Manner in which we define inputs and outputs:** Instead of traing with a single input single output at each time step we use sequences since previous inputs matter
+2. **Memory Elements that RNN's keep:** Current inputs as well as activations of neurons serve as input to the next time step.
   
 ### Comparision between FFNN and RNN
 In FFNN the output at anytime is a function of **current inputs and weights alone**. But in RNN our output at any time t is not only dependent on **current input and weights but also on previous inputs(input at time t-1, t-2...t-n)**.
