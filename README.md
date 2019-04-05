@@ -8,7 +8,7 @@ Many of real life decision making involves Temporal Dependencies ie our current 
 Recurrent Neural Networks or RNN are basically similar to Feed-Forward Networks with the addition of memory. 
 RNN's basically Artificial Neural Networks which can capture Temporal Dependencies(Dependencies over time).
 
-####History Of RNN
+#### History Of RNN
 Feed-Forward Networks were simlpy unable to capture Temporal dependencies. Modeling time based data is very critical in many real world situation since signals like speech have time varying properties. Biological neural networks themselves have recurrance so the idea of applying the same concept to ANN was born. 
 
 The first attempt to do so was using Time Delay Neural Network(TDNN, 1989)
@@ -20,10 +20,10 @@ Vanishing Gradient Problem refers to geometrical decay in the contribution of in
 
 In 1990 LSTM was introduced to address this very problem of Vanishing Gradient Decent.
 
-###LSTM
+### LSTM
 The major concept behind LSTM was the idea that some signals(state variables) can be kept fixed by using gates and reintroduced or not at an appropriate time in the future. By doing so arbitrary time intervals can be represented and temporal dependencies can be captured.
 
-###Applications of RNN
+### Applications of RNN
 * Speech Recognition: Siri, Google Assistant, Alexa
 * Time Series Prediction: Netflix, Stock Price Movements(Quant Hedge Funds)
 * NLP: Machine Translation, Google Analytics, Chatbots
